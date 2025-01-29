@@ -3,8 +3,9 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    
 }
-
 
 .logo-img{
     width: 20rem;
@@ -19,6 +20,17 @@
     margin-top: 1rem;
 }
 
+div img {
+    max-width: 100%;
+}
+
+li a img{
+    max-width: 15%;
+}
+
+p {
+    color: beige;
+}
 
 @media (max-width: 768px) {
     .logo-img{
