@@ -30,19 +30,27 @@ li a img{
     max-width: 15%;
 }
 
-p {
-    color: beige;
-}
+
 
 
 /*Productos*/
 
 .card {
-    width: 18rem;
+    width: 15rem;
 }
+
 
 .card-img-top {
     width: auto;
+}
+
+.h4 {
+    color: #f3cd85;
+}
+
+.card-imagen{
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 @media (max-width: 768px) {
