@@ -1,0 +1,12 @@
+{
+  "name": "2da-entrega-coffee-proyect",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-css": "sass --watch sass/styles.scss css/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
