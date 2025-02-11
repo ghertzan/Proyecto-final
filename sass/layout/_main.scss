@@ -1,6 +1,6 @@
 .p-index {
      p{
-        color: #ffffff;
+        color: $white;
      }
 }
 
@@ -22,7 +22,7 @@ li {
 
 .card{
     width: 15rem;
-    border: #000000;
+    border: $black;
     &-img{
 
         &-top{
@@ -36,22 +36,22 @@ li {
     }
 
     &-body{
-        background-color: #a16d38;
+        background-color: $brown-oscuro;
     }
 }
 
 .h4{
-    color: #f3cd85;
+    color: $brown-arena;
 }
 
 .btn{
-    background-color: #000000;
-    color: #b1a5a5;
-    border-color: #000000;
+    background-color: $black;
+    color: $gray;
+    border-color: $black;
 
     &:hover{
-        background-color: #ffffff;
-        color: #000000;
+        background-color: $white;
+        color: $black;
     }
 
 }
