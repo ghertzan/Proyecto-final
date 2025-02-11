@@ -59,6 +59,16 @@ li a img {
   background-color: #ffffff;
   color: #000000;
 }
+.btn-contacto {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #000000;
+}
+.btn-contacto:hover {
+  background-color: #000000;
+  color: #b1a5a5;
+  border-color: #ffffff;
+}
 
 @media (max-width: 768px) {
   .logo-img {

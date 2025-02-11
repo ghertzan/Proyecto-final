@@ -54,5 +54,16 @@ li {
         color: $black;
     }
 
+    &-contacto{
+        background-color: $white;
+        color: $black;
+        border-color: $black;
+        &:hover{
+            background-color: $black;
+            color: $gray;
+            border-color: $white;
+        }
+    }
+
 }
 
