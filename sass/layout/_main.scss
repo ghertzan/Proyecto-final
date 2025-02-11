@@ -1,0 +1,58 @@
+.p-index {
+     p{
+        color: $white;
+     }
+}
+
+div{
+    img{
+        max-width: 100%;
+    }
+}
+
+li {
+    a{
+        img{
+            max-width: 100%;
+        }
+    }
+}
+
+/*Productos*/
+
+.card{
+    width: 15rem;
+    border: $black;
+    &-img{
+
+        &-top{
+            width: auto;
+        }
+    }
+
+    &-imagen{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    &-body{
+        background-color: $brown-oscuro;
+    }
+}
+
+.h4{
+    color: $brown-arena;
+}
+
+.btn{
+    background-color: $black;
+    color: $gray;
+    border-color: $black;
+
+    &:hover{
+        background-color: $white;
+        color: $black;
+    }
+
+}
+
