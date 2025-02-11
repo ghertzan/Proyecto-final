@@ -1,0 +1,58 @@
+.p-index {
+     p{
+        color: #ffffff;
+     }
+}
+
+div{
+    img{
+        max-width: 100%;
+    }
+}
+
+li {
+    a{
+        img{
+            max-width: 100%;
+        }
+    }
+}
+
+/*Productos*/
+
+.card{
+    width: 15rem;
+    border: #000000;
+    &-img{
+
+        &-top{
+            width: auto;
+        }
+    }
+
+    &-imagen{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    &-body{
+        background-color: #a16d38;
+    }
+}
+
+.h4{
+    color: #f3cd85;
+}
+
+.btn{
+    background-color: #000000;
+    color: #b1a5a5;
+    border-color: #000000;
+
+    &:hover{
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+}
+
