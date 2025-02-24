@@ -44,6 +44,13 @@ li a img {
 }
 
 /*Productos*/
+.categoria {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .gh-h4 {
   color: #ffffff;
 }
@@ -97,6 +104,9 @@ li a img {
   }
   .img-articulo {
     height: 20rem;
+  }
+  .categoria {
+    justify-content: center;
   }
 }
 
