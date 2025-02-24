@@ -33,6 +33,10 @@ li {
     padding-bottom: 20px;
 }
 
+.gh-h3{
+    color: $white;
+}
+
 .gh-h4{
     color: $white;
 }
@@ -82,5 +86,19 @@ li {
         }
     }
 
+}
+
+/*Contacto*/
+
+.cafe-consulta{
+    max-width: 100%;
+    height: 500px;
+}
+
+.mapa{
+    max-width: 100%;
+    height: 250px;
+    margin-top: 20px;
+    padding-left: 10px;
 }
 

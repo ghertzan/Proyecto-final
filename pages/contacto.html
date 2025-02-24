@@ -23,70 +23,71 @@
 
 </head>
 <body class="bg-black">
-    <div class="container">
-        <div class="row">
-            <header>
+  <div class="container">
+    <div class="row justify-content-center my-5">
+      <header>
+          <div class="col-12 d-flex justify-content-center " >
+            <img class="logo-img" src="../img/new-logo.png" alt="the-coffee-proyect-logo">
+          </div>
 
-                <div class="col-12 d-flex justify-content-sm-around justify-content-md-around justify-content-lg-around align-items-sm-center align-items-md-center align-items-lg-center mt-5 mx-auto flex-column flex-md-row flex-lg-row">
-                  <img class="logo-img" src="../img/new-logo.png" alt="the-coffee-proyect-logo">
-                  <!-- <h1 class="titulo">The Coffee Proyect</h1> -->
+          <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body mt-3" data-bs-theme="dark">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">The Coffee Proyect</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                  </form>
                 </div>
-
-                <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body mt-3" data-bs-theme="dark">
-                    <div class="container-fluid">
-                      <a class="navbar-brand" href="#">The Coffee Proyect</a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                          <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="../pages/productos.html">Productos</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link active" href="../pages/contacto.html">Contacto</a>
-                          </li>
-                        </ul>
-                        <form class="d-flex" role="search">
-                          <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-                          <button class="btn btn-outline-success" type="submit">Buscar</button>
-                        </form>
-                      </div>
-                    </div>
-                  </nav>          
-           </header>
-        </div>
+              </div>
+            </nav>          
+     </header>
+  </div>
         
-            <main class="row justify-content-center my-5">
-                <article class="col-7">
-                        <p class="h2 text-light">Contáctanos</p>
-                        <p class="text-light">¿Tienes alguna pregunta, sugerencia o comentario? ¡Estamos aquí para ayudarte! Completa el formulario y nos pondremos en contacto contigo a la brevedad.</p>
-                        <form action="" class="text-light">
-                            <label for="nombre" class="form-label" >Nombre:</label>
-                            <br>
-                            <input type="text" class="form-control" id="nombre" name="nombre" required>
-                            <br><br>
-                            
-                            <label for="email" class="form-label">Email:</label>
-                            <br>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                            <br><br>
-                            
-                            <label for="mensaje" class="form-label">Mensaje:</label>
-                            <br>
-                            <textarea id="mensaje"  class="form-control" name="mensaje" required></textarea>
-                            <br><br>
-                            
-                            <button type="submit" class="btn btn-primary btn-contacto">Enviar</button>
-                        </form>
-                </article>
-                    <div class="col-5">
-                        <img src="../img/cafe-consulta.jpg" alt="cafe-consulta" class="cafe-consulta">    
-                    </div>
-            </main>
+    <main class="row justify-content-center my-5">
+        <article class="col-12">
+            <h2 class="gh-h2">Contactanos...</h2>
+
+            <p class="text-light">¿Tienes alguna pregunta, sugerencia o comentario? ¡Estamos aquí para ayudarte! Completa el formulario y nos pondremos en contacto contigo a la brevedad.</p>
+            <form action="" class="text-light">
+                <label for="nombre" class="form-label" >Nombre:</label>
+                <br>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                <br><br>
+                <label for="email" class="form-label">Email:</label>
+                <br>
+                <input type="email" class="form-control" id="email" name="email" required>
+                <br><br>
+                <label for="mensaje" class="form-label">Mensaje:</label>
+                <br>
+                <textarea id="mensaje"  class="form-control" name="mensaje" required></textarea>
+                <br><br>
+                <button type="submit" class="btn btn-primary btn-contacto">Enviar</button>
+            </form>
+        </article>
+
+        <div class="col-12 d-flex justify-content-center my-5">
+          <h3 class="gh-h3">Acercate al nuestro local</h3>
+        </div>
+        <div class="col-12 d-flex justify-content-center my-5">
+          
+          <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3348.25858944741!2d-60.65012169541583!3d-32.94418155920171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1740419917725!5m2!1ses-419!2sar" width="1200" height="500" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+        </div>
+    </main>
         
             <div class="row">
               <footer class="col-12 my-3" data-aos="flip-up">

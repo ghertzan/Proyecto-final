@@ -51,6 +51,10 @@ li a img {
   padding-bottom: 20px;
 }
 
+.gh-h3 {
+  color: #ffffff;
+}
+
 .gh-h4 {
   color: #ffffff;
 }
@@ -92,6 +96,19 @@ li a img {
   background-color: #000000;
   color: #b1a5a5;
   border-color: #ffffff;
+}
+
+/*Contacto*/
+.cafe-consulta {
+  max-width: 100%;
+  height: 500px;
+}
+
+.mapa {
+  max-width: 100%;
+  height: 250px;
+  margin-top: 20px;
+  padding-left: 10px;
 }
 
 @media (max-width: 768px) {
