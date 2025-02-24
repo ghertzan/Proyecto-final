@@ -7,7 +7,7 @@
 
 .logo-img {
   max-width: 100%;
-  height: 30rem;
+  height: 20rem;
 }
 
 .titulo {
@@ -111,10 +111,14 @@ li a img {
   padding-left: 10px;
 }
 
+.gh-footer {
+  margin-top: 7rem !important;
+}
+
 @media (max-width: 768px) {
   .logo-img {
     width: 100%;
-    height: 20rem;
+    height: 14rem;
   }
   .titulo {
     font-size: 1.5rem;
