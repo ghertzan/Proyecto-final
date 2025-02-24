@@ -18,6 +18,10 @@
   margin-top: 1rem;
 }
 
+.active {
+  font-style: italic;
+}
+
 .p-index p {
   color: #ffffff;
 }
@@ -30,7 +34,19 @@ li a img {
   max-width: 100%;
 }
 
+.gh-h1 {
+  color: #ffffff;
+}
+
+.gh-h2 {
+  color: #ffffff;
+}
+
 /*Productos*/
+.gh-h4 {
+  color: #ffffff;
+}
+
 .card {
   width: 15rem;
   border: #000000;
