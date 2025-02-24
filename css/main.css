@@ -134,7 +134,7 @@ li a img {
 }
 @media (min-width: 768px) {
   .navbar {
-    position: relative;
+    position: relative !important;
   }
 }
 
