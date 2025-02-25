@@ -1,11 +1,16 @@
-# 3ra Entrega Desarrollo Web Coder House
+# Proyecto final Desarrollo Web Coder House
 ## Gabriel Hertzan
 
 ### De que se trata...?
 
-Este sitio es una práctica para la carrera de **Desarrollo Web**.
+Este sitio es una práctica para el curso de **Desarrollo Web**.
 
 Es un sitio de prueba donde se muestra lo aprendido en el curso.
+
+* HTML - Semántica
+* CSS
+* SASS 
+* Animaciones
 
 ### The Coffee Proyect
 Es una web de venta de café, tanto molidos como para moler.
