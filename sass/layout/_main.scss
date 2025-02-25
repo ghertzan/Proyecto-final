@@ -29,6 +29,12 @@
 .card{
     background-color: $brown-oscuro;
     border: 1px solid $black !important;
+    // box-shadow: 0px 1px 10px $white;
+    transition: all 400ms ease;
+    &:hover{
+        border: 1px solid $white !important;
+        transform: translateY(-3%);
+    }
 }
 
 
@@ -45,9 +51,11 @@
 }
 
 .btn{
-    background-color: $black;
-    color: $gray;
-    border-color: $black;
+    background: $black;
+    color: $white;
+    border-color: $gray;
+    border-radius: 0px;
+    font-weight: bold;
 
     &:hover{
         background-color: $white;

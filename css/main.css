@@ -22,7 +22,7 @@
 }
 
 .active {
-  font-style: italic;
+  font-weight: bold;
 }
 
 .p-index p {
@@ -53,6 +53,11 @@
 .card {
   background-color: #a16d38;
   border: 1px solid #000000 !important;
+  transition: all 400ms ease;
+}
+.card:hover {
+  border: 1px solid #ffffff !important;
+  transform: translateY(-3%);
 }
 
 .gh-h3 {
@@ -68,9 +73,11 @@
 }
 
 .btn {
-  background-color: #000000;
-  color: #b1a5a5;
-  border-color: #000000;
+  background: #000000;
+  color: #ffffff;
+  border-color: #b1a5a5;
+  border-radius: 0px;
+  font-weight: bold;
 }
 .btn:hover {
   background-color: #ffffff;
@@ -139,6 +146,13 @@
   }
   .titulo {
     font-size: 1.5rem;
+  }
+  .card {
+    width: 14rem;
+  }
+  .gh-card {
+    display: flex;
+    justify-content: center;
   }
 }
 

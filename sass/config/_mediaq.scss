@@ -3,6 +3,7 @@
         position: relative !important;
     }
     
+    
 }
 
 @media (max-width: 767px) {
@@ -14,6 +15,13 @@
 
     .titulo{
         font-size: 1.5rem;
+    }
+    .card{
+        width: 14rem;
+    }
+    .gh-card{
+        display: flex;
+        justify-content: center;
     }
 
 }
