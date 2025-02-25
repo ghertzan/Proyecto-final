@@ -26,32 +26,20 @@
     padding-bottom: 20px;
 }
 
+.card{
+    background-color: $brown-oscuro;
+    border: 1px solid $black !important;
+    margin-bottom: 20px;
+    width: 15rem;
+}
+
+
 .gh-h3{
     color: $white;
 }
 
 .gh-h4{
     color: $white;
-}
-
-.card{
-    width: 15rem;
-    border: $black;
-    &-img{
-
-        &-top{
-            width: auto;
-        }
-    }
-
-    &-imagen{
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-
-    &-body{
-        background-color: $brown-oscuro;
-    }
 }
 
 .h4{

@@ -1,4 +1,11 @@
-@media (max-width: 768px) {
+@media (min-width: 768px){
+    .navbar{
+        position: relative !important;
+    }
+    
+}
+
+@media (max-width: 767px) {
     .logo-img{
         width: 100%;
         height: 100%;
@@ -8,15 +15,7 @@
     .titulo{
         font-size: 1.5rem;
     }
-    .img-articulo{
-        height: 20rem;
-    }
-    .categoria{
-        justify-content: center;
-    }
+
 }
-@media (min-width: 768px){
-    .navbar{
-        position: relative !important;
-    }   
-}
+
+
