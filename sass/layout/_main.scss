@@ -81,6 +81,22 @@
 
 }
 
+.gh--carousel-img{
+    max-width: 100%;
+}
+.gh--carousel-caption{
+    font-size: 1rem;
+    color: $white;
+    text-shadow: $black 1px 1px 1px;
+    font-style: normal;
+    h5{
+        font-size: 2rem;
+        color: $white;
+        font-style: normal;
+        text-shadow: $black 1px 1px 1px;
+    }
+}
+
 /*Contacto*/
 
 .cafe-consulta{
