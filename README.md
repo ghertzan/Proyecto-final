@@ -7,7 +7,7 @@ Este sitio es una práctica para el curso de **Desarrollo Web**.
 
 Es un sitio de prueba donde se muestra lo aprendido en el curso.
 
-* HTML - Semántica
+* HTML 5 - Semántica
 * CSS
 * SASS 
 * Animaciones
