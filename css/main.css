@@ -25,23 +25,7 @@
   font-weight: bold;
 }
 
-.p-index p {
-  color: #ffffff;
-}
-
-.img-articulo {
-  max-width: 100%;
-  height: 500px;
-}
-
 /*Productos*/
-.categoria {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
 .card {
   background-color: #a16d38;
   border: 1px solid #000000 !important;
@@ -92,11 +76,6 @@
 }
 
 /*Contacto*/
-.cafe-consulta {
-  max-width: 100%;
-  height: 500px;
-}
-
 .mapa {
   max-width: 100%;
   height: 250px;

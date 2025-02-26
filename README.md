@@ -14,3 +14,7 @@ Es un sitio de prueba donde se muestra lo aprendido en el curso.
 
 ### The Coffee Proyect
 Es una web de venta de café, tanto molidos como para moler.
+
+### Imágenes
+El 100% de las imágenes, fueron creadas con IA en diferentes plataformas.
+
