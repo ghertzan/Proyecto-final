@@ -1,107 +1,108 @@
 .p-index {
-     p{
-        color: $white;
-     }
-}
-
-.img-articulo{
-    max-width: 100%;
-    height: 500px;
-}
-
-.gh-h1{
+  p {
     color: $white;
+  }
 }
 
-.gh-h2{
-    color: $white;
+.img-articulo {
+  max-width: 100%;
+  height: 500px;
+}
+
+.gh-h1 {
+  color: $white;
+}
+
+.gh-h2 {
+  color: $white;
 }
 
 /*Productos*/
 
-.categoria{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.categoria {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.card{
-    background-color: $brown-oscuro;
-    border: 1px solid $black !important;
-    // box-shadow: 0px 1px 10px $white;
-    transition: all 400ms ease;
-    &:hover{
-        border: 1px solid $white !important;
-        transform: translateY(-3%);
+.card {
+  background-color: $brown-oscuro;
+  border: 1px solid $black !important;
+  // box-shadow: 0px 1px 10px $white;
+  transition: all 400ms ease;
+
+  &:hover {
+    border: 1px solid $white !important;
+    transform: translateY(-3%);
+  }
+}
+
+.gh-h3 {
+  color: $white;
+}
+
+.gh-h4 {
+  color: $white;
+}
+
+.h4 {
+  color: $brown-arena;
+}
+
+.btn {
+  background: $black;
+  color: $white;
+  border-color: $gray;
+  border-radius: 0px;
+  font-weight: bold;
+
+  &:hover {
+    background-color: $white;
+    color: $black;
+  }
+
+  &-contacto {
+    background-color: $white;
+    color: $black;
+    border-color: $black;
+
+    &:hover {
+      background-color: $black;
+      color: $gray;
+      border-color: $white;
     }
+  }
 }
 
+.gh--carousel-img {
+  max-width: 100%;
+}
 
-.gh-h3{
+.gh--carousel-caption {
+  font-size: 1rem;
+  color: $white;
+  text-shadow: $black 1px 1px 1px;
+  font-style: normal;
+
+  h5 {
+    font-size: 2rem;
     color: $white;
-}
-
-.gh-h4{
-    color: $white;
-}
-
-.h4{
-    color: $brown-arena;
-}
-
-.btn{
-    background: $black;
-    color: $white;
-    border-color: $gray;
-    border-radius: 0px;
-    font-weight: bold;
-
-    &:hover{
-        background-color: $white;
-        color: $black;
-    }
-
-    &-contacto{
-        background-color: $white;
-        color: $black;
-        border-color: $black;
-        &:hover{
-            background-color: $black;
-            color: $gray;
-            border-color: $white;
-        }
-    }
-
-}
-
-.gh--carousel-img{
-    max-width: 100%;
-}
-.gh--carousel-caption{
-    font-size: 1rem;
-    color: $white;
-    text-shadow: $black 1px 1px 1px;
     font-style: normal;
-    h5{
-        font-size: 2rem;
-        color: $white;
-        font-style: normal;
-        text-shadow: $black 1px 1px 1px;
-    }
+    text-shadow: $black 1px 1px 1px;
+  }
 }
 
 /*Contacto*/
 
-.cafe-consulta{
-    max-width: 100%;
-    height: 500px;
+.cafe-consulta {
+  max-width: 100%;
+  height: 500px;
 }
 
-.mapa{
-    max-width: 100%;
-    height: 250px;
-    margin-top: 20px;
-    padding-left: 10px;
+.mapa {
+  max-width: 100%;
+  height: 250px;
+  margin-top: 20px;
+  padding-left: 10px;
 }
-

@@ -1,36 +1,34 @@
-@media (min-width: 768px){
-    .navbar{
-        position: relative !important;
-    }
-    .gh-comentario-chico{
-        display: none;
-    }
-    
-    
+@media (min-width: 768px) {
+  .navbar {
+    position: relative !important;
+  }
+
+  .gh-comentario-chico {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
-    .logo-img{
-        width: 100%;
-        height: 100%;
-        padding-top: 50px;
-    }
+  .logo-img {
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+  }
 
-    .titulo{
-        font-size: 1.5rem;
-    }
-    .card{
-        width: 14rem;
-    }
-    .gh-card{
-        display: flex;
-        justify-content: center;
-    }
+  .titulo {
+    font-size: 1.5rem;
+  }
 
-    .gh-comentario{
-        display: none;
-    }
+  .card {
+    width: 14rem;
+  }
 
+  .gh-card {
+    display: flex;
+    justify-content: center;
+  }
+
+  .gh-comentario {
+    display: none;
+  }
 }
-
-
