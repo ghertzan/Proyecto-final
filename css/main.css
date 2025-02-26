@@ -34,14 +34,6 @@
   height: 500px;
 }
 
-.gh-h1 {
-  color: #ffffff;
-}
-
-.gh-h2 {
-  color: #ffffff;
-}
-
 /*Productos*/
 .categoria {
   margin-top: 10px;
@@ -58,18 +50,6 @@
 .card:hover {
   border: 1px solid #ffffff !important;
   transform: translateY(-3%);
-}
-
-.gh-h3 {
-  color: #ffffff;
-}
-
-.gh-h4 {
-  color: #ffffff;
-}
-
-.h4 {
-  color: #f3cd85;
 }
 
 .btn {
