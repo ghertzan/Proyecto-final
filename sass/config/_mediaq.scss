@@ -2,6 +2,9 @@
     .navbar{
         position: relative !important;
     }
+    .gh-comentario-chico{
+        display: none;
+    }
     
     
 }
@@ -22,6 +25,10 @@
     .gh-card{
         display: flex;
         justify-content: center;
+    }
+
+    .gh-comentario{
+        display: none;
     }
 
 }
