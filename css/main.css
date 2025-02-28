@@ -96,9 +96,6 @@
   .navbar {
     position: relative !important;
   }
-  .gh-form-responsive {
-    display: none;
-  }
 }
 @media (max-width: 767px) {
   .logo-img {
@@ -115,9 +112,6 @@
   .gh-card {
     display: flex;
     justify-content: center;
-  }
-  .gh-comentario {
-    display: none;
   }
 }
 
