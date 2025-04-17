@@ -75,7 +75,7 @@ function verCarritoHtml() {
             tdPrecio.textContent = precio;
 
             const tdTotal = document.createElement("td");
-            tdTotal.textContent = parseFloat(precio) * parseFloat(element.cantidad);
+            tdTotal.textContent = parseInt(precio) * parseInt(element.cantidad);
 
             const tdEliminar = document.createElement("button");
             tdEliminar.className ="btn-close";

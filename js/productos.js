@@ -1,15 +1,15 @@
 //Base de Datos
 const articulos = [
-    { "id": 1, "descripcion": "Robusta", "precio": 15571.90, "ump": "PAQ", "caract": "light roast", "img": "../img/cafe-para-moler.webp", "stock": 10 },
-    { "id": 2, "descripcion": "Liberica", "precio": 18841.17, "ump": "UN", "caract": "medium roast", "img": "../img/cafe-para-moler.webp", "stock": 10 },
-    { "id": 3, "descripcion": "Robusta", "precio": 24734.24, "ump": "PAQ", "caract": "cappuccino", "img": "../img/cafe-para-moler.webp", "stock": 10 },
-    { "id": 4, "descripcion": "Excelsa", "precio": 19968.44, "ump": "PAQ", "caract": "dark roast", "img": "../img/cafe-para-moler.webp", "stock": 10 },
-    { "id": 5, "descripcion": "Robusta", "precio": 8638.64, "ump": "PAQ", "caract": "medium roast", "img": "../img/cafe-para-moler.webp", "stock": 10 },
-    { "id": 6, "descripcion": "Catimor", "precio": 5450.33, "ump": "UN", "caract": "dark roast", "img": "../img/cafe-para-moler.webp", "stock": 10 },
-    { "id": 7, "descripcion": "Excelsa", "precio": 6417.12, "ump": "KG", "caract": "dark roast", "img": "../img/cafe-para-moler.webp", "stock": 10 },
-    { "id": 8, "descripcion": "Liberica", "precio": 22577.10, "ump": "CAP", "caract": "cappuccino", "img": "../img/cafe-para-moler.webp", "stock": 10 },
-    { "id": 9, "descripcion": "Arabica", "precio": 11720.87, "ump": "KG", "caract": "light roast", "img": "../img/cafe-para-moler.webp", "stock": 10 },
-    { "id": 10, "descripcion": "Catimor", "precio": 12764.47, "ump": "KG", "caract": "light roast", "img": "../img/cafe-para-moler.webp", "stock": 10 }]
+    { "id": 1, "descripcion": "Robusta", "precio": 15571, "ump": "PAQ", "caract": "light roast", "img": "../img/cafe-para-moler.webp", "stock": 10 },
+    { "id": 2, "descripcion": "Liberica", "precio": 18841, "ump": "UN", "caract": "medium roast", "img": "../img/cafe-para-moler.webp", "stock": 10 },
+    { "id": 3, "descripcion": "Robusta", "precio": 24734, "ump": "PAQ", "caract": "cappuccino", "img": "../img/cafe-para-moler.webp", "stock": 10 },
+    { "id": 4, "descripcion": "Excelsa", "precio": 19968, "ump": "PAQ", "caract": "dark roast", "img": "../img/cafe-para-moler.webp", "stock": 10 },
+    { "id": 5, "descripcion": "Robusta", "precio": 8638, "ump": "PAQ", "caract": "medium roast", "img": "../img/cafe-para-moler.webp", "stock": 10 },
+    { "id": 6, "descripcion": "Catimor", "precio": 5450, "ump": "UN", "caract": "dark roast", "img": "../img/cafe-para-moler.webp", "stock": 10 },
+    { "id": 7, "descripcion": "Excelsa", "precio": 6417, "ump": "KG", "caract": "dark roast", "img": "../img/cafe-para-moler.webp", "stock": 10 },
+    { "id": 8, "descripcion": "Liberica", "precio": 22577, "ump": "CAP", "caract": "cappuccino", "img": "../img/cafe-para-moler.webp", "stock": 10 },
+    { "id": 9, "descripcion": "Arabica", "precio": 11720, "ump": "KG", "caract": "light roast", "img": "../img/cafe-para-moler.webp", "stock": 10 },
+    { "id": 10, "descripcion": "Catimor", "precio": 12764, "ump": "KG", "caract": "light roast", "img": "../img/cafe-para-moler.webp", "stock": 10 }]
 
 
 let carrito = [];
