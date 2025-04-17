@@ -83,6 +83,20 @@
   padding-left: 10px;
 }
 
+/*Carrito*/
+.gh-table {
+  background-color: whitesmoke;
+  align-items: center;
+  text-align: center;
+}
+.gh-table td {
+  align-content: center;
+}
+
+.gh-input {
+  text-align: center;
+}
+
 .gh-footer {
   margin-top: 1.5rem !important;
 }

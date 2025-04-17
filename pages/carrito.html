@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Tipos de cafés para vos..." />
+    <meta
+      name="description"
+      content="Contactate con nosotros, estamos para ayudarte."
+    />
     <meta
       name="keywords"
-      content="cafe, especialidad, sostenibilidad, calidad, frescura, origen, variedad, asesoria, experta, amantes, del, cafe, The, Coffee, Proyect, productos, facebook, instagram, whatsapp, contacto, productos"
+      content="cafe, especialidad, sostenibilidad, calidad, frescura, origen, variedad, asesoria, experta, amantes, del, cafe, The, Coffee, Proyect, productos, contacto, facebook, instagram, whatsapp, contacto"
     />
     <!-- BOOTSTRAP -->
     <link
@@ -33,15 +36,15 @@
     <!-- AOS-ANIMACIONES -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/main.css" />
-    <title>The coffee Proyect - Productos</title>
+    <title>The coffee Proyect - Contactanos...</title>
     <link
       rel="shortcut icon"
       href="../img/favicon-32x32.png"
       type="image/x-icon"
     />
-    <script src="../js/productos.js" defer></script>
-  </head>
 
+    <script src="../js/carrito.js" defer></script>
+  </head>
   <body class="bg-black container-fluid justify-content-center">
     <div class="container">
       <!-- HEADER -->
@@ -71,46 +74,44 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="../index.html"
-                    >Inicio</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="../pages/productos.html"
-                    >Productos</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../pages/carrito.html"
-                    >Carrito</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-                </li>
-              </ul>
-              <form class="d-flex" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Buscar..."
-                  aria-label="Search"
-                />
-                <button class="btn btn-outline-success" type="submit">
-                  Buscar
-                </button>
-              </form>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html"
+                      >Inicio</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/productos.html"
+                      >Productos</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="../pages/carrito.html"
+                      >Carrito</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Buscar..."
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-success" type="submit">
+                    Buscar
+                  </button>
+                </form>
             </div>
           </div>
         </nav>
       </header>
-
       <!-- MAIN -->
-      <main class="container" id="container">
-
-  
+      <main class="row justify-content-center my-5">
+        <div id="containerCarrito"></div>
       </main>
       <hr class="col-12 text-light my-5 gh-hr" />
       <!-- FOOTER -->
