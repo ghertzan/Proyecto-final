@@ -89,14 +89,35 @@ function botonAlCarrito() {
                     carrito.forEach(e => {
                         if (e.item.id == id) {
                             e.cantidad += cant;
-                            console.log("C++", carrito);
+                            Toastify({
+                                text: "Se agregó " + cant + " del producto " + prodElegido.descripcion,
+                                className: "info",
+                                style: {
+                                  background: "linear-gradient(to right, #a16d38, #f3cd85)",
+                                }
+                              }).showToast();
                         }
                     });
                 } else {
                     carrito.push({ item: prodElegido, cantidad: cant });
+                    Toastify({
+                        text: "Producto agregado",
+                        className: "info",
+                        style: {
+                            background: "linear-gradient(to right, #a16d38, #f3cd85)",
+                        }
+                      }).showToast();
                 }
             } else {
                 carrito.push({ item: prodElegido, cantidad: cant });
+                Toastify({
+                    text: "Producto agregado",
+                    className: "info",
+                    style: {
+                        background: "linear-gradient(to right, #a16d38, #f3cd85)",
+                        
+                    }
+                  }).showToast();
             }
             sessionStorage.setItem("carrito", JSON.stringify(carrito));
             sessionStorage.setItem("cantidadCarrito", carrito.length);

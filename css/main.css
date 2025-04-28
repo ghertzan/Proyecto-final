@@ -41,6 +41,10 @@
   transform: translateY(-3%);
 }
 
+.add-banner {
+  font-weight: bold;
+}
+
 .btn {
   background: #000000;
   color: #ffffff;
