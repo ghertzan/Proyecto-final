@@ -36,7 +36,7 @@
     <title>The coffee Proyect - Productos</title>
     <link
       rel="shortcut icon"
-      href="../img/favicon-32x32.png"
+      href="../img/favicon-32x32.webp"
       type="image/x-icon"
     />
     <script src="../js/productos.js" defer></script>
@@ -91,17 +91,10 @@
                   <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                 </li>
               </ul>
-              <form class="d-flex" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Buscar..."
-                  aria-label="Search"
-                />
-                <button class="btn btn-outline-success" type="submit">
-                  Buscar
+                <button class="btn btn-outline-success" id="btnCarrito" type="submit">
+                  <img src="../img/carrito.webp" alt="" class="img-carrito">
+                  <span id = "cantidadArticulos">  </span> 
                 </button>
-              </form>
             </div>
           </div>
         </nav>
@@ -109,8 +102,9 @@
 
       <!-- MAIN -->
       <main class="container" id="container">
+        <section id="seccionParaMoler">
 
-  
+        </section>
       </main>
       <hr class="col-12 text-light my-5 gh-hr" />
       <!-- FOOTER -->

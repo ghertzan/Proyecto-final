@@ -25,6 +25,11 @@
   font-weight: bold;
 }
 
+.img-carrito {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 /*Productos*/
 .card {
   background-color: #a16d38;
@@ -40,7 +45,7 @@
   background: #000000;
   color: #ffffff;
   border-color: #b1a5a5;
-  border-radius: 0px;
+  border-radius: 3px;
   font-weight: bold;
 }
 .btn:hover {
