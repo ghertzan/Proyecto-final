@@ -94,16 +94,10 @@
 
 /*Carrito*/
 .gh-table {
-  background-color: whitesmoke;
-  align-items: center;
-  text-align: center;
+  font-size: 0.8em;
 }
 .gh-table td {
   align-content: center;
-}
-
-.gh-input {
-  text-align: center;
 }
 
 .gh-footer {
