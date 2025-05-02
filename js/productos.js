@@ -23,7 +23,6 @@ function htmlClear() {
 function htmlArticulos() {
 
     htmlClear();
-    iconoCarrito();
     const container = document.getElementById("container");
 
     const section = document.createElement("section");
@@ -111,7 +110,6 @@ function botonAlCarrito() {
             }
             sessionStorage.setItem("carrito", JSON.stringify(carrito));
             sessionStorage.setItem("cantidadCarrito", carrito.length);
-            iconoCarrito();
         };
     });
 }

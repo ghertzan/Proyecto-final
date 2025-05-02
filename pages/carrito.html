@@ -39,7 +39,7 @@
     <title>The coffee Proyect - Contactanos...</title>
     <link
       rel="shortcut icon"
-      href="../img/favicon-32x32.png"
+      href="../img/favicon-32x32.webp"
       type="image/x-icon"
     />
 
@@ -86,32 +86,24 @@
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="../pages/carrito.html"
-                      >Carrito</a
-                    >
-                  </li>
-                  <li class="nav-item">
                     <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link active btn" id="btnCarrito" href="../pages/carrito.html"> 
+                      <img src="../img/carrito.webp" alt="" class="img-carrito">
+                      <span id = "cantidadArticulos">  </span> 
+                    </a>
+                  </li>
                 </ul>
-                <form class="d-flex" role="search">
-                  <input
-                    class="form-control me-2"
-                    type="search"
-                    placeholder="Buscar..."
-                    aria-label="Search"
-                  />
-                  <button class="btn btn-outline-success" type="submit">
-                    Buscar
-                  </button>
-                </form>
             </div>
           </div>
         </nav>
       </header>
       <!-- MAIN -->
       <main class="row justify-content-center my-5">
-        <div id="containerCarrito"></div>
+        <div id="containerCarrito">
+
+        </div>
       </main>
       <hr class="col-12 text-light my-5 gh-hr" />
       <!-- FOOTER -->

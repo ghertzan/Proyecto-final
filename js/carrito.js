@@ -1,21 +1,9 @@
 function iconoCarrito() {
     const cantidadCarrito = document.getElementById("cantidadArticulos");
     const carritoStorage = sessionStorage.getItem("carrito");
-    const btnCarrito = document.getElementById("btnCarrito");
-
     if (carritoStorage) {
         let carrito = JSON.parse(carritoStorage);
-        cantidadCarrito.innerHTML = carrito.length; 
-        btnCarrito.onclick = () => {  
-            Swal.fire({
-                title: "<h6 class='display-6'> Tu Compra...</h6>",
-                html: getCarritoHtml(carrito),
-                theme: 'dark',
-                footer: '<a href="#">Why do I have this issue?</a>'
-              });
-        };
-    }else{
-        btnCarrito.disable = true;
+        cantidadCarrito.innerHTML = carrito.length;
     }
 }
 
@@ -82,3 +70,4 @@ function getCarritoHtml(carrito){
     return div.innerHTML;
 }
 
+iconoCarrito();
