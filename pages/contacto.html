@@ -18,6 +18,8 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
+    <script src="./js/carrito.js" defer></script>
     <!-- FONTAWESOME-ICONOS-REDES -->
     <link
       rel="stylesheet"
@@ -42,6 +44,8 @@
       href="../img/favicon-32x32.webp"
       type="image/x-icon"
     />
+    <!-- SCRIPTS-PROPIOS -->
+    <script src="../js/carrito.js" defer></script>
   </head>
   <body class="bg-black container-fluid justify-content-center">
     <div class="container">
@@ -84,19 +88,23 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../pages/carrito.html"
-                    >Carrito</a
-                  >
+                  <a class="nav-link" href="../pages/carrito.html">Carrito</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="../pages/contacto.html">Contacto</a>
+                  <a class="nav-link active" href="../pages/contacto.html"
+                    >Contacto</a
+                  >
                 </li>
               </ul>
-              <button class="btn btn-outline-success"  id="btnCarrito" type="submit">
-                <img src="../img/carrito.webp" alt="" class="img-carrito">
-                <span id = "cantidadArticulos">  </span> 
+              <button
+                class="btn btn-outline-success"
+                id="btnCarrito"
+                type="submit"
+              >
+                <img src="../img/carrito.webp" alt="" class="img-carrito" />
+                <span id="cantidadArticulos"> </span>
               </button>
-          </div>
+            </div>
           </div>
         </nav>
       </header>

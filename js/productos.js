@@ -20,16 +20,6 @@ function htmlClear() {
     container.innerHTML = ``;
 }
 
-function iconoCarrito(){
-    const cantidadCarrito = document.getElementById("cantidadArticulos");
-    const cantidadCarritoStorage = sessionStorage.getItem("cantidadCarrito");
-
-    if(cantidadCarritoStorage){
-        cantidadCarrito.innerHTML =  cantidadCarritoStorage;
-    }
-}
-
-
 function htmlArticulos() {
 
     htmlClear();
@@ -93,9 +83,9 @@ function botonAlCarrito() {
                                 text: "Se agregó " + cant + " del producto " + prodElegido.descripcion,
                                 className: "info",
                                 style: {
-                                  background: "linear-gradient(to right, #a16d38, #f3cd85)",
+                                    background: "linear-gradient(to right, #a16d38, #f3cd85)",
                                 }
-                              }).showToast();
+                            }).showToast();
                         }
                     });
                 } else {
@@ -106,7 +96,7 @@ function botonAlCarrito() {
                         style: {
                             background: "linear-gradient(to right, #a16d38, #f3cd85)",
                         }
-                      }).showToast();
+                    }).showToast();
                 }
             } else {
                 carrito.push({ item: prodElegido, cantidad: cant });
@@ -115,13 +105,13 @@ function botonAlCarrito() {
                     className: "info",
                     style: {
                         background: "linear-gradient(to right, #a16d38, #f3cd85)",
-                        
+
                     }
-                  }).showToast();
+                }).showToast();
             }
             sessionStorage.setItem("carrito", JSON.stringify(carrito));
             sessionStorage.setItem("cantidadCarrito", carrito.length);
-            cantidadCarrito.innerHTML = carrito.length;
+            iconoCarrito();
         };
     });
 }
