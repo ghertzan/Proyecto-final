@@ -12,9 +12,6 @@ const articulos = [
     { "id": 10, "descripcion": "Catimor", "precio": 12764, "ump": "KG", "caract": "light roast", "img": "../img/cafe-para-moler.webp", "stock": 10 }]
 
 
-let carrito = [];
-
-
 function htmlClear() {
     const container = document.getElementById("container");
     container.innerHTML = ``;
@@ -47,73 +44,15 @@ function htmlArticulos() {
                     <h5 class="card-title">${articulo.descripcion}</h5>
                     <h6 class="card-subtitle mb-2 text-body-secondary"> $ ${parseInt(articulo.precio).toFixed(2)}</h6> <span>Por ${articulo.ump}</span>
                     <p class="card-text">${articulo.caract}</p>
-                    <button class="btn btn-light btn-sm restar" id="restar-${articulo.id}"> <span> < </span></button>
-                    <span class="cantidad" id="cantidad-${articulo.id}"> 1 </span>
-                    <button class="btn btn-light btn-sm sumar" id="sumar-${articulo.id}"> <span> > </span></button>
                     <button class="btn alCarrito" id=${articulo.id}>Al carrito</button>
                 </div>
             </div>`;
         divRow.appendChild(divGhCard);
+        divGhCard.getElementsByTagName("button")[0].addEventListener("click", () => addToCart(articulo, 1));
     });
     section.append(h2ParaMoler, divRow);
     container.appendChild(section);
-    selectoresCantidad();
-    botonAlCarrito();
 }
-
-function botonAlCarrito() {
-    const botonesAlCarrito = document.querySelectorAll(".alCarrito");
-    const cantidadCarrito = document.getElementById("cantidadArticulos");
-
-    botonesAlCarrito.forEach(boton => {
-        boton.onclick = (e) => {
-            const carritoStorage = sessionStorage.getItem("carrito");
-            const id = e.currentTarget.id;
-            const cant = parseInt(document.getElementById("cantidad-" + id).textContent);
-            const prodElegido = articulos.find(e => e.id == id);
-            if (carritoStorage) {
-                carrito = JSON.parse(carritoStorage);
-                const existe = carrito.some(e => e.item.id == id);
-                if (existe) {
-                    carrito.forEach(e => {
-                        if (e.item.id == id) {
-                            e.cantidad += cant;
-                            Toastify({
-                                text: "Se agregó " + cant + " del producto " + prodElegido.descripcion,
-                                className: "info",
-                                style: {
-                                    background: "linear-gradient(to right, #a16d38, #f3cd85)",
-                                }
-                            }).showToast();
-                        }
-                    });
-                } else {
-                    carrito.push({ item: prodElegido, cantidad: cant });
-                    Toastify({
-                        text: "Producto agregado",
-                        className: "info",
-                        style: {
-                            background: "linear-gradient(to right, #a16d38, #f3cd85)",
-                        }
-                    }).showToast();
-                }
-            } else {
-                carrito.push({ item: prodElegido, cantidad: cant });
-                Toastify({
-                    text: "Producto agregado",
-                    className: "info",
-                    style: {
-                        background: "linear-gradient(to right, #a16d38, #f3cd85)",
-
-                    }
-                }).showToast();
-            }
-            sessionStorage.setItem("carrito", JSON.stringify(carrito));
-            sessionStorage.setItem("cantidadCarrito", carrito.length);
-        };
-    });
-}
-
 
 function selectoresCantidad() {
     const botonesRestar = document.querySelectorAll(".restar");
@@ -141,3 +80,4 @@ function selectoresCantidad() {
 }
 
 htmlArticulos();
+iconoCarrito();

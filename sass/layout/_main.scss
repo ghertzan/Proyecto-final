@@ -70,11 +70,23 @@
 
 /*Carrito*/
 
+#containerCarrito{
+  width: 250rem;
+  margin: auto;
+}
 .gh-table{
   font-size: 0.8em;
 
   & td{
     align-content: center;
+  }
+}
+
+.cart-item{
+  display: flex;
+  gap: 1rem;
+  & img{
+
   }
 }
 
