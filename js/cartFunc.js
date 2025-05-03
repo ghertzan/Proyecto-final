@@ -37,8 +37,7 @@ function setCart(cart){
 
 function removeFromCart(articulo, cant){
     let cart = getCart();
-
-
+/*TODO*/
 }
 
 function addToCart(articulo, cant){
