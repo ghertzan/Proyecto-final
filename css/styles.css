@@ -1,0 +1,38 @@
+/*Carrito*/
+#containerCarrito {
+    width: 250rem;
+    justify-content: space-around;
+
+}
+
+.gh-table {
+    font-size: 0.8em;
+}
+
+.gh-table td {
+    align-content: center;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    justify-content: space-around;
+}
+
+.texto-carrito{
+    color: rgb(255, 255, 255);
+}
+
+.cart-item img {
+    height: 5rem;
+    aspect-ratio: 1.5;
+}
+
+.cart-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+}

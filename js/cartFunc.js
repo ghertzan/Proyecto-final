@@ -1,10 +1,44 @@
 function iconoCarrito() {
     const cantidadCarrito = document.getElementById("cantidadArticulos");
-    const cartStorage = sessionStorage.getItem("cart");
-    if (cartStorage) {
-        let cart = JSON.parse(cartStorage);
+    const cart = getCart();
+    if (cart != null) {
         cantidadCarrito.innerHTML = cart.length;
     }
+}
+
+/*Crea un nuevo item para el carrito*/
+function getNewCartItem(articulo, cant){
+    const newCartItem = {item: articulo, cantidad: cant};
+    return newCartItem;
+}
+
+/*Devuelve formato númerico un texto*/
+function toCurrency(num){
+    return new Intl.NumberFormat("es-AR", {style: "currency", currency: "ARS"}).format(num);
+}
+
+/*Devuelve el carrito de la memoria como un Array de Objetos*/
+function getCart(){
+    const cart = sessionStorage.getItem("cart");
+    if(!cart){
+        return null;
+    }
+    return JSON.parse(cart);
+}
+
+/*Graba el carrito en la memoria*/
+function setCart(cart){
+    try{
+        sessionStorage.setItem("cart", JSON.stringify(cart));
+    }catch(err){
+        console.log(err);
+    }
+}
+
+function removeFromCart(articulo, cant){
+    let cart = getCart();
+
+
 }
 
 function addToCart(articulo, cant){
@@ -46,16 +80,9 @@ function addToCart(articulo, cant){
     }
 }
 
-/*Crea un nuevo item para el carrito*/
-function getNewCartItem(articulo, cant){
-    const newCartItem = {item: articulo, cantidad: cant};
-    return newCartItem;
-}
 
-/*Devuelve formato númerico un texto*/
-function toCurrency(num){
-    return new Intl.NumberFormat("es-AR", {style: "currency", currency: "ARS"}).format(num);
-}
+
+
 
 function deleteItem(carrito, item){
     return carrito.filter(e => e !== item);

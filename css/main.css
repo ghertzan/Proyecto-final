@@ -92,23 +92,7 @@
   padding-left: 10px;
 }
 
-/*Carrito*/
-#containerCarrito {
-  width: 250rem;
-  margin: auto;
-}
 
-.gh-table {
-  font-size: 0.8em;
-}
-.gh-table td {
-  align-content: center;
-}
-
-.cart-item {
-  display: flex;
-  gap: 1rem;
-}
 .gh-footer {
   margin-top: 1.5rem !important;
 }
