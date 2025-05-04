@@ -37,7 +37,15 @@ function setCart(cart){
 
 function removeFromCart(articulo, cant){
     let cart = getCart();
-/*TODO*/
+    cart.forEach(e => {
+        if(e.item.id == articulo.id){
+            e.cantidad = e.cantidad - cant;
+            if(e.cantidad == 0){
+                cart = cart.filter( (e) => e.item.id !== articulo.id);
+            }
+        }
+    });
+    setCart(cart);
 }
 
 function addToCart(articulo, cant){
@@ -141,5 +149,3 @@ function getCarritoHtml(carrito){
 
     return div.innerHTML;
 }
-
-iconoCarrito();

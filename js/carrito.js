@@ -6,6 +6,7 @@ function clearCartView(){
 
 function createCartView(){
     clearCartView();
+    iconoCarrito();
     const cartContainerDiv = document.getElementById("containerCarrito");
     const cartStorage = sessionStorage.getItem("cart");
     if(!cartStorage){
@@ -34,10 +35,14 @@ function createCartView(){
             const btnRestar = cartItemDiv.querySelector(".resta");
             const btnSumar = cartItemDiv.querySelector(".suma");
             btnSumar.onclick = () => {
-                console.log("sumar");
                 addToCart(e.item, 1);
-                createCartView();
+                createCartView();     
             };
+            btnRestar.onclick = () => {
+                removeFromCart(e.item, 1);
+                createCartView();
+            }
+            
         });
         const footerDiv = document.createElement("div");
         footerDiv.className = "cart-footer";
@@ -50,5 +55,5 @@ function createCartView(){
         
     }
 }
-let cart = getCart();
+
 createCartView();
