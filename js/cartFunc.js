@@ -35,6 +35,10 @@ function setCart(cart){
     }
 }
 
+function emptyCart(){
+    setCart([]);
+}
+
 function removeFromCart(articulo, cant){
     let cart = getCart();
     cart.forEach(e => {
