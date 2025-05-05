@@ -32,17 +32,6 @@ function createCheckoutView(cart){
             </div>
 
             <div class="col-12">
-              <label for="username" class="form-label">Nombre de usuario</label>
-              <div class="input-group has-validation">
-                <span class="input-group-text">@</span>
-                <input type="text" class="form-control" id="username" placeholder="Nombre de usuario" required="">
-              <div class="invalid-feedback">
-                  Tu nombre de usuario es requerido.
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12">
               <label for="email" class="form-label">Email <span class="text-muted">(Opcional)</span></label>
               <input type="email" class="form-control" id="email" placeholder="tu@example.com">
               <div class="invalid-feedback">
@@ -52,7 +41,7 @@ function createCheckoutView(cart){
 
             <div class="col-12">
               <label for="address" class="form-label">Dirección</label>
-              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+              <input type="text" class="form-control" id="address" placeholder="" required="">
               <div class="invalid-feedback">
                 Por favor introduce tu direccion de envio.
                 Please enter your shipping address.
@@ -60,30 +49,8 @@ function createCheckoutView(cart){
             </div>
 
             <div class="col-12">
-              <label for="address2" class="form-label">Dirección 2 <span class="text-muted">(Opcional)</span></label>
-              <input type="text" class="form-control" id="address2" placeholder="Apartamento o suite">
-            </div>
-
-            <div class="col-md-5">
-              <label for="country" class="form-label">País</label>
-              <select class="form-select" id="country" required="">
-                <option value="">Elige...</option>
-                <option>United States</option>
-              </select>
-              <div class="invalid-feedback">
-                Selecciona un país válido.
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <label for="state" class="form-label">Estado</label>
-              <select class="form-select" id="state" required="">
-                <option value="">Elige...</option>
-                <option>California</option>
-              </select>
-              <div class="invalid-feedback">
-                Proporciona un estado válido.
-              </div>
+              <label for="address2" class="form-label">Dirección 2 (opcional)</label>
+              <input type="text" class="form-control" id="address2" placeholder="Piso/Depto">
             </div>
 
             <div class="col-md-3">
@@ -129,8 +96,7 @@ function createCheckoutView(cart){
           <div class="row gy-3">
             <div class="col-md-6">
               <label for="cc-name" class="form-label">Nombre en la tarjeta</label>
-              <input type="text" class="form-control" id="cc-name" placeholder="" required="">
-              <small class="text-muted">Nombre completo como se muestra en la tarjeta</small>
+              <input type="text" class="form-control" id="cc-name" placeholder="Tal como figura en la tarjeta" required="">
               <div class="invalid-feedback">
                 Se requiere el nombre en la tarjeta
               </div>
