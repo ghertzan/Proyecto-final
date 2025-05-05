@@ -48,7 +48,8 @@ function htmlArticulos() {
                 </div>
             </div>`;
         divRow.appendChild(divGhCard);
-        divGhCard.getElementsByTagName("button")[0].addEventListener("click", () => addToCart(articulo, 1));
+        const btnAlCarrito = divGhCard.querySelector(".alCarrito");
+        btnAlCarrito.onclick = () => addToCart(articulo, 1);
     });
     section.append(h2ParaMoler, divRow);
     container.appendChild(section);
