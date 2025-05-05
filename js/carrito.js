@@ -1,8 +1,7 @@
 function clearCartView(){
     const cartContainerDiv = document.getElementById("containerCarrito");
-    cartContainerDiv.innerHTML = ""; // Limpiar el contenedor del carrito
+    cartContainerDiv.innerHTML = "";
 }
-
 
 function createCartView(){
     clearCartView();
@@ -55,9 +54,13 @@ function createCartView(){
         bntVaciar.onclick = () =>{
             emptyCart();
             createCartView();
-        }
-        
+        };
+        btnComprar.onclick = () => {
+            createCheckoutView(cart);
+        };
     }
 }
+
+
 
 createCartView();

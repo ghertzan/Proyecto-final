@@ -78,3 +78,7 @@ function addToCart(articulo, cant){
       }).showToast();
     iconoCarrito();
 }
+
+function checkOut(){
+    
+}
