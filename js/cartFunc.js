@@ -56,26 +56,44 @@ function addToCart(articulo, cant){
     let cart = getCart();
     if(!cart || cart.length == 0){
         cart = [getNewCartItem(articulo,cant)];
+        Toastify({
+            text: "Añadido al carrito",
+            className: "exito",
+            style: {
+              background: "linear-gradient(to right,#a16d38,#f3cd85)",
+            }
+          }).showToast();
     }else{
         const exist = cart.some(e => e.item.id == articulo.id);
         if(exist){
             cart.forEach(e => {
                 if(e.item.id == articulo.id){
                     e.cantidad++;
+                    if(e.cantidad > articulo.stock){
+                        e.cantidad--;
+                        Toastify({
+                            text: `No hay stock, para tu pedido ${articulo.stock} ${articulo.ump} max.`,
+                            className: "info",
+                            style: {
+                              background: "linear-gradient(to right,#a16d38,#f3cd85)",
+                            }
+                          }).showToast();
+                    }
                 }
             })
         }else{
             cart.push(getNewCartItem(articulo,cant));
+            Toastify({
+                text: "Añadido al carrito",
+                className: "exito",
+                style: {
+                  background: "linear-gradient(to right,#a16d38,#f3cd85)",
+                }
+              }).showToast();
         }
     }
     setCart(cart);
-    Toastify({
-        text: "Añadido al carrito",
-        className: "exito",
-        style: {
-          background: "linear-gradient(to right,#a16d38,#f3cd85)",
-        }
-      }).showToast();
+    
     iconoCarrito();
 }
 

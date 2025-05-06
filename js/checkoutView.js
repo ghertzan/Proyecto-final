@@ -1,3 +1,4 @@
+
 function createCheckoutView(cart){
     clearCartView();
     const cartContainerDiv = document.getElementById("containerCarrito");
@@ -13,7 +14,7 @@ function createCheckoutView(cart){
 
     
     paymentMethodDiv.innerHTML=`
-        <form class="needs-validation text-light">
+        <form class="needs-validation text-light" id="checkout-form">
           <div class="row g-3">
             <div class="col-sm-6">
               <label for="firstName" class="form-label">Nombre</label>
@@ -32,8 +33,8 @@ function createCheckoutView(cart){
             </div>
 
             <div class="col-12">
-              <label for="email" class="form-label">Email <span class="text-muted">(Opcional)</span></label>
-              <input type="email" class="form-control" id="email" placeholder="tu@example.com">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="tu@example.com" required>
               <div class="invalid-feedback">
                 Ingresa una dirección de correo electrónico válida para actualizaciones de envío.
               </div>
@@ -64,18 +65,7 @@ function createCheckoutView(cart){
 
           <hr class="my-4">
 
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="same-address">
-            <label class="form-check-label" for="same-address">La dirección de envío es la misma que mi dirección de facturación</label>
-          </div>
-
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="save-info">
-            <label class="form-check-label" for="save-info">Guardar esta información para la próxima vez</label>
-          </div>
-
-          <hr class="my-4">
-
+          
           <h4 class="mb-3">Pago</h4>
 
           <div class="my-3">
@@ -88,8 +78,8 @@ function createCheckoutView(cart){
               <label class="form-check-label" for="debit">Tarjeta de débito</label>
             </div>
             <div class="form-check">
-              <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
-              <label class="form-check-label" for="paypal">PayPal</label>
+              <input id="transfer" name="paymentMethod" type="radio" class="form-check-input" required="">
+              <label class="form-check-label" for="transfer">Transferencia</label>
             </div>
           </div>
 
@@ -129,7 +119,7 @@ function createCheckoutView(cart){
 
           <hr class="my-4">
 
-          <button class="w-100 btn btn-primary btn-lg" type="submit">Continuar con el pago</button>
+          <button class="w-100 btn btn-primary btn-lg" type="submit" id="checkout-btn">Continuar con el pago</button>
         </form>
     `;
 
@@ -167,5 +157,16 @@ function createCheckoutView(cart){
     cartResumeDiv.append(h4,ul);
     divCheckout.append(paymentMethodDiv, cartResumeDiv);
     cartContainerDiv.appendChild(divCheckout);
+    
+    document.getElementById("checkout-btn").onclick = () => {
+      getFormData();
+    };
 
+}
+
+
+function getFormData(){
+  const form = document.getElementById("checkout-form");
+  const formData = new FormData(form);
+  console.log(formData.keys());
 }
