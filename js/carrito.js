@@ -45,8 +45,8 @@ function createCartView(){
         footerDiv.className = "cart-footer";
         footerDiv.innerHTML = `
             <h5 class="texto-carrito">Total del carrito: ${toCurrency(cart.reduce((acc, curr) => acc + (curr.item.precio * curr.cantidad), 0))} </h5>
-            <button class="btn comprar"> Comprar</button>
-            <button class="btn vaciar-carrito"> Vaciar carrito</button>
+            <button class="btn comprar mt-3"> Comprar</button>
+            <button class="btn vaciar-carrito mt-3"> Vaciar carrito</button>
             `;
         cartContainerDiv.appendChild(footerDiv); 
         const bntVaciar = footerDiv.querySelector(".vaciar-carrito");
