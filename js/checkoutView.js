@@ -16,7 +16,7 @@ function createCheckoutView(cart) {
           <div class="row g-3">
             <div class="col-sm-6">
               <label for="firstName" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="firstName" name="firstName" placeholder="" value="" required="">
+              <input type="text" class="form-control" id="firstName" name="firstName" placeholder="" value="" required>
               <div class="invalid-feedback">
                 Se requiere un nombre válido.
               </div>
@@ -24,7 +24,7 @@ function createCheckoutView(cart) {
 
             <div class="col-sm-6">
               <label for="lastName" class="form-label">Apellido</label>
-              <input type="text" class="form-control" id="lastName" name="lastName" placeholder="" value="" required="">
+              <input type="text" class="form-control" id="lastName" name="lastName" placeholder="" value="" required>
               <div class="invalid-feedback">
                 Se requiere apellido válido.
               </div>
@@ -32,15 +32,14 @@ function createCheckoutView(cart) {
 
             <div class="col-12">
               <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="tu@example.com" required>
-              <div class="invalid-feedback">
+              <input type="email" class="form-control" id="email" name="email" placeholder="tu@example.com" required             <div class="invalid-feedback">
                 Ingresa una dirección de correo electrónico válida para actualizaciones de envío.
               </div>
             </div>
 
             <div class="col-12">
               <label for="address" class="form-label">Dirección</label>
-              <input type="text" class="form-control" id="address" name="address" placeholder="" required="">
+              <input type="text" class="form-control" id="address" name="address" placeholder="" required>
               <div class="invalid-feedback">
                 Por favor introduce tu direccion de envio.
                 Please enter your shipping address.
@@ -54,7 +53,7 @@ function createCheckoutView(cart) {
 
             <div class="col-md-3">
               <label for="zip" class="form-label">Código postal</label>
-              <input type="text" class="form-control" id="zip" name="zip" placeholder="" required="">
+              <input type="text" class="form-control" id="zip" name="zip" placeholder="" required>
               <div class="invalid-feedback">
                 Código postal requerido.
               </div>
@@ -68,15 +67,15 @@ function createCheckoutView(cart) {
 
           <div class="my-3">
             <div class="form-check">
-              <input id="credit" name="paymentMethodCC" type="radio" class="form-check-input" checked="" required="">
+              <input id="credit" name="paymentMethodCC" type="radio" class="form-check-input" value="CC" checked="" required>
               <label class="form-check-label" for="credit">Tarjeta de crédito</label>
             </div>
             <div class="form-check">
-              <input id="debit" name="paymentMethodDC" type="radio" class="form-check-input" required="">
+              <input id="debit" name="paymentMethodCC" type="radio" class="form-check-input" value="DC" required>
               <label class="form-check-label" for="debit">Tarjeta de débito</label>
             </div>
             <div class="form-check">
-              <input id="transfer" name="paymentMethodTransfer" type="radio" class="form-check-input" required="">
+              <input id="transfer" name="paymentMethodCC" type="radio" class="form-check-input" value="TR" required>
               <label class="form-check-label" for="transfer">Transferencia</label>
             </div>
           </div>
@@ -84,7 +83,7 @@ function createCheckoutView(cart) {
           <div class="row gy-3">
             <div class="col-md-6">
               <label for="cc-name" class="form-label">Nombre en la tarjeta</label>
-              <input type="text" class="form-control" id="cc-name" name="cc-name" placeholder="Tal como figura en la tarjeta" required="">
+              <input type="text" class="form-control" id="cc-name" name="cc-name" placeholder="Tal como figura en la tarjeta" required>
               <div class="invalid-feedback">
                 Se requiere el nombre en la tarjeta
               </div>
@@ -92,7 +91,7 @@ function createCheckoutView(cart) {
 
             <div class="col-md-6">
               <label for="cc-number" class="form-label">Número de tarjeta de crédito</label>
-              <input type="text" class="form-control" id="cc-number" name="cc-number" placeholder="" required="">
+              <input type="text" class="form-control" id="cc-number" name="cc-number" placeholder="" required>
               <div class="invalid-feedback">
                 Se requiere número de tarjeta de crédito
               </div>
@@ -100,7 +99,7 @@ function createCheckoutView(cart) {
 
             <div class="col-md-3">
               <label for="cc-expiration" class="form-label">Vencimiento</label>
-              <input type="text" class="form-control" id="cc-expiration" name="cc-expiration" placeholder="" required="">
+              <input type="text" class="form-control" id="cc-expiration" name="cc-expiration" placeholder="" required>
               <div class="invalid-feedback">
                 Fecha de vencimiento requerida
               </div>
@@ -108,7 +107,7 @@ function createCheckoutView(cart) {
 
             <div class="col-md-3">
               <label for="cc-cvv" class="form-label">CVV</label>
-              <input type="text" class="form-control" id="cc-cvv" name="cc-cvv" placeholder="" required="">
+              <input type="text" class="form-control" id="cc-cvv" name="cc-cvv" placeholder="" required>
               <div class="invalid-feedback">
                 Código de seguridad requerido
               </div>
@@ -117,7 +116,7 @@ function createCheckoutView(cart) {
 
           <hr class="my-4">
 
-          <button class="w-100 btn btn-primary btn-lg" id="checkout-btn">Continuar con el pago</button>
+          <button class="w-100 btn btn-primary btn-lg" id="checkout-btn" type="submit">Continuar con el pago</button>
         </form>
     `;
 
@@ -166,32 +165,45 @@ function createCheckoutView(cart) {
   cartContainerDiv.appendChild(divCheckout);
 
   document.getElementById("checkout-btn").onclick = () => {
-    getFormData(cart);
+    const datosCliente = getFormData(cart);
+    Swal.fire({
+      title: "Resumen de la compra...",
+      text: "Si presionas OK la compra se procesará.",
+      showCancelButton: true,
+      confirmButtonText: "Si, Lo quiero",
+      showClass: {
+        popup: `
+      animate__animated
+      animate__fadeInUp
+      animate__faster
+    `,
+      },
+      hideClass: {
+        popup: `
+      animate__animated
+      animate__fadeOutDown
+      animate__faster
+    `,
+      },
+    });
   };
 }
 
 function getFormData(cart) {
-  const form = document.getElementById("checkout-form");
-  const paymentForm = new FormData(form);
-
   const paymentRecord = {
-    nombre: paymentForm.get("firstName"),
-    apellido: paymentForm.get("lastName"),
-    email: paymentForm.get("email"),
-    direccion: paymentForm.get("address"),
-    direccion2: paymentForm.get("address2"),
-    codigoPostal: paymentForm.get("zip"),
-    payMethod1: paymentForm.get("paymentMethodCC"),
-    payMethod2: paymentForm.get("paymentMethodDC"),
-    payMethod3: paymentForm.get("paymentMethodTransfer"),
-    ccNombre: paymentForm.get("cc-name"),
-    ccNumero: paymentForm.get("cc-number"),
-    ccVencimiento: paymentForm.get("cc-expiration"),
-    ccCvv: paymentForm.get("cc-cvv"),
+    nombre: document.querySelector("#firstName").value,
+    apellido: document.querySelector("#lastName").value,
+    email: document.querySelector("#email").value,
+    direccion: document.querySelector("#address").value,
+    direccion2: document.querySelector("#address2").value,
+    codigoPostal: document.querySelector("#zip").value,
+    payMethod: document.querySelector("[name=paymentMethodCC]:checked").value,
+    ccNombre: document.querySelector("#cc-name").value,
+    ccNumero: document.querySelector("#cc-number").value,
+    ccVencimiento: document.querySelector("#cc-expiration").value,
+    ccCvv: document.querySelector("#cc-cvv").value,
     cart: cart,
   };
-  paymentForm.keys().forEach((e) => {
-    console.log(e);
-  });
-  // console.log(paymentRecord);
+
+  return paymentRecord;
 }
